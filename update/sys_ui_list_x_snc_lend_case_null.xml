@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_lend_case" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>9af98f35db502b000d8d76231f9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>1ef98f35db502b000d8d76231f9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contact</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>9ef98f35db502b000d8d76231f9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>borrower</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>12f98f35db502b000d8d76231f9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>co_borrower</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>92f98f35db502b000d8d76231f9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>subject_property</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>16f98f35db502b000d8d76231f9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>96f98f35db502b000d8d76231f9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>1af98f35db502b000d8d76231f9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>stage</element>
+            <list_id display_value="x_snc_lend_case" element="NULL" name="x_snc_lend_case" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">d2f98f35db502b000d8d76231f9619ca</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_id>aaf98f35db502b000d8d76231f9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_lend_case</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-03 06:03:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d2f98f35db502b000d8d76231f9619ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_lend_case</sys_name>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_lend_case_null</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-03 06:03:40</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

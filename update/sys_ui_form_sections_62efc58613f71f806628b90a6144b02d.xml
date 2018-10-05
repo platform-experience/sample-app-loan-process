@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="62efc58613f71f806628b90a6144b02d" sys_domain="global" table="csm_consumer_user" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-09 19:17:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3eefc58613f71f806628b90a6144b033</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="csm_consumer_user" name="csm_consumer_user" sys_domain="global" view="242af9fadb0823000d8d76231f9619ca">62efc58613f71f806628b90a6144b02d</sys_ui_form>
+            <sys_ui_section display_value="">f6efc58613f71f806628b90a6144b031</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-09 19:17:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-09 19:17:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>feefc58613f71f806628b90a6144b030</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="csm_consumer_user" name="csm_consumer_user" sys_domain="global" view="242af9fadb0823000d8d76231f9619ca">62efc58613f71f806628b90a6144b02d</sys_ui_form>
+            <sys_ui_section display_value="">f2efc58613f71f806628b90a6144b02f</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-09 19:17:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-09 19:17:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>76efc58613f71f806628b90a6144b0d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="csm_consumer_user" name="csm_consumer_user" sys_domain="global" view="242af9fadb0823000d8d76231f9619ca">62efc58613f71f806628b90a6144b02d</sys_ui_form>
+            <sys_ui_section display_value="">faefc58613f71f806628b90a6144b0d5</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-09 19:17:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>csm_consumer_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-09 19:17:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>62efc58613f71f806628b90a6144b02d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>csm_consumer_user</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_62efc58613f71f806628b90a6144b02d</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-09 19:17:28</sys_updated_on>
+            <sys_user/>
+            <view display_value="Human Resources" name="human_resources">242af9fadb0823000d8d76231f9619ca</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

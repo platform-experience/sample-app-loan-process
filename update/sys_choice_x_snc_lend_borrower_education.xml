@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="education" table="x_snc_lend_borrower" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>education</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Some High School</label>
+            <language>en</language>
+            <name>x_snc_lend_borrower</name>
+            <sequence>1</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:31:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eca88a55133f9b806628b90a6144b02a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:34:07</sys_updated_on>
+            <value>some_high_school</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>education</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>High School Graduate or Equivalent</label>
+            <language>en</language>
+            <name>x_snc_lend_borrower</name>
+            <sequence>2</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:31:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d098a55133f9b806628b90a6144b02b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:34:23</sys_updated_on>
+            <value>high_school_graduate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>education</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Trade or Vocational Degree</label>
+            <language>en</language>
+            <name>x_snc_lend_borrower</name>
+            <sequence>3</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:32:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac198e55133f9b806628b90a6144b0b1</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:34:31</sys_updated_on>
+            <value>trade_vocational</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>education</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Some College</label>
+            <language>en</language>
+            <name>x_snc_lend_borrower</name>
+            <sequence>4</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:32:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9e29ce55133f9b806628b90a6144b097</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:34:38</sys_updated_on>
+            <value>some_college</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>education</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Associate Degree</label>
+            <language>en</language>
+            <name>x_snc_lend_borrower</name>
+            <sequence>5</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:32:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d390295133f9b806628b90a6144b060</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:34:46</sys_updated_on>
+            <value>associate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>education</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Bachelor's Degree</label>
+            <language>en</language>
+            <name>x_snc_lend_borrower</name>
+            <sequence>6</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:33:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88498e55133f9b806628b90a6144b0b4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:34:51</sys_updated_on>
+            <value>bachelors</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>education</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Graduate or Professional Degree</label>
+            <language>en</language>
+            <name>x_snc_lend_borrower</name>
+            <sequence>7</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:33:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fa790295133f9b806628b90a6144b0be</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:36:56</sys_updated_on>
+            <value>graduate_professional</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>education</element>
+            <name>x_snc_lend_borrower</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:31:30</sys_created_on>
+            <sys_id>ba1a79fadb0823000d8d76231f9619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>education</sys_name>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_choice_x_snc_lend_borrower_education</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:31:30</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

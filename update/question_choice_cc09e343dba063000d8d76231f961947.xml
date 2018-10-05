@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <misc>0</misc>
+        <order>3</order>
+        <question display_value="Type of Liability">eaf7a303dba063000d8d76231f961996</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-19 15:47:18</sys_created_on>
+        <sys_id>cc09e343dba063000d8d76231f961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Line of Credit</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>question_choice_cc09e343dba063000d8d76231f961947</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-19 15:47:18</sys_updated_on>
+        <text>Line of Credit</text>
+        <value>line_of_credit</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=cc09e343dba063000d8d76231f961947"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>cc09e343dba063000d8d76231f961947</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-19 15:47:19</sys_created_on>
+        <sys_id>8409e343dba063000d8d76231f9619c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-19 15:47:19</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>cc09e343dba063000d8d76231f961947</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-19 15:47:18</sys_created_on>
+        <sys_id>c409e343dba063000d8d76231f961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-19 15:47:18</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

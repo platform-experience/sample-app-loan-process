@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="stage_related_list" table="x_snc_lend_case" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage_related_list</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Employment</label>
+            <language>en</language>
+            <name>x_snc_lend_case</name>
+            <sequence>0</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-07 10:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1dc8a093db58eb000d8d76231f961906</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-07 10:10:13</sys_updated_on>
+            <value>employment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage_related_list</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Income</label>
+            <language>en</language>
+            <name>x_snc_lend_case</name>
+            <sequence>1</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-07 10:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>99c8a093db58eb000d8d76231f961908</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-07 10:10:13</sys_updated_on>
+            <value>income</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage_related_list</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Assets</label>
+            <language>en</language>
+            <name>x_snc_lend_case</name>
+            <sequence>2</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-07 10:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>55c8a093db58eb000d8d76231f96190a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-07 10:10:13</sys_updated_on>
+            <value>assets</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage_related_list</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Liabilities</label>
+            <language>en</language>
+            <name>x_snc_lend_case</name>
+            <sequence>3</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-07 10:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>11c8a093db58eb000d8d76231f96190c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-07 10:10:13</sys_updated_on>
+            <value>liabilities</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage_related_list</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Expenses</label>
+            <language>en</language>
+            <name>x_snc_lend_case</name>
+            <sequence>4</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-07 10:10:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d9c8a093db58eb000d8d76231f96190d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-07 10:10:13</sys_updated_on>
+            <value>expenses</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage_related_list</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_snc_lend_case</name>
+            <sequence>5</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-07 10:10:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>95c8a093db58eb000d8d76231f96190f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-07 10:10:14</sys_updated_on>
+            <value>complete</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>stage_related_list</element>
+            <name>x_snc_lend_case</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-07 10:10:13</sys_created_on>
+            <sys_id>55c8a093db58eb000d8d76231f961907</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>stage_related_list</sys_name>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_choice_x_snc_lend_case_stage_related_list</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-07 10:10:13</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

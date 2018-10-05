@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+	console.log(c.data.caseReview);
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>// Bootstrap "link-unstyled" Helper Class
+// https://codepen.io/scottloway/pen/grgJgB
+
+.link-unstyled,
+.link-unstyled:visited,
+.link-unstyled:hover,
+.link-unstyled:active,
+.link-unstyled:focus,
+.link-unstyled:active:hover {
+  font-style: inherit;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+h2,h3,h4 {
+	margin: 0;
+  margin-bottom: 0.2em;
+}
+
+.section, .item, .sub-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(0,0,0,.1);
+}
+.item {
+  background-color: #fff;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>loan_review_submit</id>
+        <internal>false</internal>
+        <link/>
+        <name>Loan Application Review &amp; Submit</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	var borrowerLists = [
+		{
+			label: 'Employment History',
+			parentRef: 'borrower',
+			table: 'x_snc_lend_employment',
+			fields: [
+				'company',
+				'position',
+				'start_date',
+				'end_date',
+				'industry_start_date'
+			]
+		},
+		{
+			label: 'Current Home',
+			parentRef: 'borrower',
+			table: 'x_snc_lend_property',
+			displayField: 'name',
+			fields: [
+				'name',
+				'owned'
+			]
+		},
+		{
+			label: 'Income',
+			parentRef: 'borrower',
+			table: 'x_snc_lend_income',
+			fields: [
+				'type',
+				'short_description',
+				'monthly_amount'
+			]
+		},
+		{
+			label: 'Assets',
+			parentRef: 'borrower',
+			table: 'x_snc_lend_asset',
+			fields: [
+				'type',
+				'short_description',
+				'value'
+			]
+		},
+		{
+			label: 'Liabilities',
+			parentRef: 'borrower',
+			table: 'x_snc_lend_liability',
+			fields: [
+				'type',
+				'short_description',
+				'value'
+			]
+		},
+		{
+			label: 'Expenses',
+			parentRef: 'borrower',
+			table: 'x_snc_lend_expense',
+			fields: [
+				'type',
+				'short_description',
+				'monthly_amount'
+			]
+		}
+	];
+	
+	var caseModel = {
+		label: 'Loan Application',
+		records: [
+			{
+				label: 'Loan',
+				displayField: 'loan_amount',
+				field: 'loan_product',
+				table: 'x_snc_lend_loan_product',
+				fields: [
+					'loan_type',
+					'loan_duration',
+					'loan_schedule'
+				]
+			},
+			{
+				label: 'Property',
+				field: 'subject_property',
+				table: 'x_snc_lend_property',
+				displayField: 'name', 
+				fields: [
+					'property_value'
+				]
+			},
+			{
+				label: 'Borrower',
+				field: 'borrower',
+				table: 'x_snc_lend_borrower',
+				displayField: 'name',
+				fields: [
+					'birthdate',
+					'ssn',
+					'education',
+					'marital_status',
+					'dependents'
+				],
+				lists: borrowerLists
+			},
+			{
+				label: 'Co-Borrower',
+				field: 'co_borrower',
+				table: 'x_snc_lend_borrower',
+				displayField: 'name',
+				fields: [
+					'birthdate',
+					'ssn',
+					'education',
+					'marital_status',
+					'dependents'
+				],
+				lists: borrowerLists
+			}
+		]
+	};
+	
+	var case_id = $sp.getParameter('case');	
+	var caseGR = new GlideRecord('x_snc_lend_case');
+	if (caseGR.get( case_id )) {
+		data.caseReview = getRecord(caseGR, caseModel);
+	}
+	
+	function getRecord(recGR, recModel) {
+		var rec = {};
+		rec.id = {
+			sys_id: recGR.sys_id.toString(),
+			table: recModel.table
+		}
+		if (!rec.id.sys_id) return false;
+		var urlParams = {
+			id: 'form',
+			table: rec.id.table,
+			sys_id: rec.id.sys_id,
+			view: 'Self_service'
+		}
+		rec.formUrl = '?';
+		for (var p in urlParams)
+			rec.formUrl += ([p, urlParams[p]].join('=') + '&');
+		if (recModel.label)
+			rec.label = recModel.label;
+		if (recModel.displayField && recGR[recModel.displayField])
+			rec.displayValue = recGR[recModel.displayField].getDisplayValue();
+		if (recModel.fields && recModel.fields.length)
+			rec.fields = getRecordFields(recGR, recModel.fields);
+		if (recModel.records && recModel.records.length)
+			rec.records = getRecords(recGR, recModel.records);
+		if (recModel.lists && recModel.lists.length)
+			rec.lists = getRelatedLists(recGR, recModel.lists);
+		return rec;
+	}
+	
+	function getRecordFields(gr, fieldsModel) {
+		var fields = [];
+		fieldsModel.forEach( function(field) {
+			if (gr[field]) {
+				fields.push({
+					label: gr[field].getLabel(),
+					value: gr[field].getDisplayValue()
+				});
+			}
+		})
+		return fields;
+	}
+	
+	function getRecords(gr, recordsModel) {
+		var records = [];
+		recordsModel.forEach( function(recModel) {
+			var record = getRecord( gr[recModel.field], recModel );
+			if (record) records.push( record );
+		});
+		return records;
+	}
+	
+	function getRelatedLists(gr, listsModel) {
+		var lists = [];
+		listsModel.forEach( function(listModel){
+			var records = [];
+			var recGR = new GlideRecord(listModel.table);
+			recGR.addQuery(listModel.parentRef, gr.sys_id);
+			recGR.query();
+			while (recGR.next()) {
+				records.push( getRecord(recGR, listModel) );
+			}
+			if (records.length) {
+				lists.push({
+					label: listModel.label,
+					records: records
+				});
+			}
+		});
+		return lists;
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-19 19:26:04</sys_created_on>
+        <sys_id>6c1bdc5fdb2463000d8d76231f961934</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>Loan Application Review &amp; Submit</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sp_widget_6c1bdc5fdb2463000d8d76231f961934</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-28 07:13:22</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+	<div class="panel-heading">
+    <h1 class="h2 m-t-none m-b-sm font-thin">${Review}</h1>
+  </div>
+  <div class="panel-body">
+    <div>
+      Please review your loan application before submitting:
+    </div>
+    <h3 ng-bind="c.data.caseReview.label"></h3>
+    <div class="section" ng-repeat="section in c.data.caseReview.records">
+      <a ng-href="{{section.formUrl}}" name="{{section.label}}" class="link-unstyled">
+        <h3 ng-bind="section.label"></h3>
+        <h4 ng-bind="section.displayValue"></h4>
+        <div ng-repeat="field in section.fields">
+          <strong ng-bind="field.label + ':'"></strong>
+          <span ng-bind="field.value"></span>
+        </div>
+      </a>
+      <div class="item" ng-repeat="list in section.lists">
+        <h4 ng-bind="list.label"></h4>
+        <div class="sub-item" ng-repeat="li in list.records">
+          <div ng-repeat="li_field in li.fields">
+            <strong ng-bind="li_field.label + ':'"></strong>
+          	<span ng-bind="li_field.value"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button ng-click="submit()" class="btn btn-default">
+      ${Submit}
+    </button>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

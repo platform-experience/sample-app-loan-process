@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_stage">
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <component_indexes>1</component_indexes>
+        <duration>1970-01-01 01:00:00</duration>
+        <flow display_value="Loan Application">f5e6aa7ddbdce7000d8d76231f961983</flow>
+        <label>Borrower</label>
+        <order>1</order>
+        <stage_id>4ce4d684-48a2-459c-bee1-a5c9343fcf6b</stage_id>
+        <states>{"pending":"Pending - has not started","inprogress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-03 09:32:25</sys_created_on>
+        <sys_id>58c97bf5dbd02b000d8d76231f9619f5</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Borrower</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_hub_flow_stage_58c97bf5dbd02b000d8d76231f9619f5</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-07 16:20:20</sys_updated_on>
+        <type>standard</type>
+        <value>borrower</value>
+    </sys_hub_flow_stage>
+</record_update>

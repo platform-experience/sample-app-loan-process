@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_logic">
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7aa637c6db5c2b000d8d76231f96197d</block>
+        <comment/>
+        <connected_to/>
+        <display_text/>
+        <flow display_value="Loan Application">6b4ac375db502b000d8d76231f9619a1</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 06:09:21</sys_created_on>
+        <sys_id>2fd4181edb9c2b000d8d76231f96194a</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_hub_flow_logic_2fd4181edb9c2b000d8d76231f96194a</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-18 11:46:19</sys_updated_on>
+        <ui_id>97ff1ea7-b255-4649-bb41-00cbb94547fd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2fd4181edb9c2b000d8d76231f96194a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2fd4181edb9c2b000d8d76231f96194a</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 06:09:21</sys_created_on>
+        <sys_id>23d4181edb9c2b000d8d76231f96194e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-18 10:33:08</sys_updated_on>
+        <value>{{Created_1.current.has_co_borrower}}=true</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+</record_update>

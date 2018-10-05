@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>income_set</internal_name>
+        <layout>2down</layout>
+        <name/>
+        <order>50</order>
+        <read_roles/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-08-20 15:38:04</sys_created_on>
+        <sys_id>e3d6c5ad13886f406718721a6144b093</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Income</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>item_option_new_set_e3d6c5ad13886f406718721a6144b093</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-08-28 18:01:23</sys_updated_on>
+        <title>Income</title>
+        <type>one_to_many</type>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

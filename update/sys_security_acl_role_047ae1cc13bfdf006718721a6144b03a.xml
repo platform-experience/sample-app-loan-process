@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-08-03 16:05:29</sys_created_on>
+        <sys_id>047ae1cc13bfdf006718721a6144b03a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_lend_case.x_snc_lend.loan_case_user</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_security_acl display_value="x_snc_lend_case">847ae1cc13bfdf006718721a6144b036</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_047ae1cc13bfdf006718721a6144b03a</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-08-03 16:05:29</sys_updated_on>
+        <sys_user_role display_value="x_snc_lend.loan_case_user" name="x_snc_lend.loan_case_user">e36a21cc13bfdf006718721a6144b029</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

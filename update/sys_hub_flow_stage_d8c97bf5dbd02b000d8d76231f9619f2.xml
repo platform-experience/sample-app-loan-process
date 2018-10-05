@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_stage">
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <component_indexes>13,8</component_indexes>
+        <duration>1970-01-01 01:00:00</duration>
+        <flow display_value="Loan Application">f5e6aa7ddbdce7000d8d76231f961983</flow>
+        <label>Expenses</label>
+        <order>7</order>
+        <stage_id>2c65c9ca-7a24-42fd-87b3-c99ac93c0520</stage_id>
+        <states>{"pending":"Pending - has not started","inprogress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-03 09:32:25</sys_created_on>
+        <sys_id>d8c97bf5dbd02b000d8d76231f9619f2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Expenses</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_hub_flow_stage_d8c97bf5dbd02b000d8d76231f9619f2</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-18 11:45:30</sys_updated_on>
+        <type>standard</type>
+        <value>expenses</value>
+    </sys_hub_flow_stage>
+</record_update>

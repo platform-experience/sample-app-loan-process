@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_stage">
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <component_indexes>12,7</component_indexes>
+        <duration>1970-01-01 01:00:00</duration>
+        <flow display_value="Loan Application">6b4ac375db502b000d8d76231f9619a1</flow>
+        <label>Liabilities</label>
+        <order>6</order>
+        <stage_id>db814c5c-9f92-40eb-aa7b-a52eb2f290db</stage_id>
+        <states>{"pending":"Pending - has not started","inprogress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-03 09:32:54</sys_created_on>
+        <sys_id>13d93ff5dbd02b000d8d76231f961975</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Liabilities</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_hub_flow_stage_13d93ff5dbd02b000d8d76231f961975</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-18 11:46:19</sys_updated_on>
+        <type>standard</type>
+        <value>liabilities</value>
+    </sys_hub_flow_stage>
+</record_update>

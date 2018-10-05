@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="same_home_as_borrower" label="Shares Home Assigned to Other Borrower" language="en" table="x_snc_lend_borrower">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>same_home_as_borrower</element>
+            <help/>
+            <hint/>
+            <label>Shares Home Assigned to Other Borrower</label>
+            <language>en</language>
+            <name>x_snc_lend_borrower</name>
+            <plural>Shares Home Assigned to Other Borrowers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-09 16:33:17</sys_created_on>
+            <sys_id>b55a6c8a13771f806628b90a6144b0cd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Shares Home Assigned to Other Borrower</sys_name>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_lend_borrower_same_home_as_borrower_en</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-09 19:52:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

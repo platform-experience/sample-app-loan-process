@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Loan Application Case" max_length="40" name="x_snc_lend_case" sizeclass="65" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Borrower" max_length="32" name="borrower" reference="x_snc_lend_borrower" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact" max_length="32" name="contact" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Co-Borrower" max_length="32" name="co_borrower" reference="x_snc_lend_borrower" type="reference"/>
+        <element attributes="omit_sys_original=true,edge_encryption_enabled=true" label="Down Payment" max_length="20" name="down_payment" type="currency"/>
+        <element choice="3" choice_field="redirect_url" default="loan" label="Entry Stage" max_length="40" name="entry_stage" reference="x_snc_lend_submit_stage" reference_qual="name=9e3a21cc13bfdf006718721a6144b0f5^element=entry_stage^inactive=false^EQ^ORDERBYsequence" reference_qual_condition="name=9e3a21cc13bfdf006718721a6144b0f5^element=entry_stage^inactive=false^EQ^ORDERBYsequence" type="reference">
+            <choice/>
+        </element>
+        <element label="Has Co-Borrower" max_length="40" name="has_co_borrower" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Loan Product" max_length="32" name="loan_product" reference="x_snc_lend_loan_product" type="reference"/>
+        <element label="Stage" max_length="80" name="stage" type="workflow"/>
+        <element attributes="edge_encryption_enabled=true" label="Subject Property" max_length="32" name="subject_property" reference="x_snc_lend_property" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Submitted On" max_length="40" name="submitted_on" type="glide_date_time"/>
+    </element>
+</database>

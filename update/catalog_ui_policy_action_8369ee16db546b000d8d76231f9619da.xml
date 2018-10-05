@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Borrower">786fc299133f9b806628b90a6144b041</catalog_item>
+        <catalog_variable>IO:df51039d13bf9b806628b90a6144b08b</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 16:58:23</sys_created_on>
+        <sys_id>8369ee16db546b000d8d76231f9619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>zip</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_8369ee16db546b000d8d76231f9619da</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 16:58:23</sys_updated_on>
+        <table/>
+        <ui_policy display_value="hide address fields if has historic homes and not (home selected or new home)">df0f164a13bb1f806628b90a6144b010</ui_policy>
+        <variable>zip</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

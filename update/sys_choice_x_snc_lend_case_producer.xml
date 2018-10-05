@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="producer" table="x_snc_lend_case" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>loan</dependent_value>
+            <element>producer</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Loan</label>
+            <language>en</language>
+            <name>x_snc_lend_case</name>
+            <sequence/>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-13 04:56:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d9ad649dba023400d8d76231f961986</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-13 04:57:46</sys_updated_on>
+            <value>9259b6ca13fb1f806628b90a6144b0d3</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>producer</element>
+            <name>x_snc_lend_case</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-13 04:56:50</sys_created_on>
+            <sys_id>859ad649dba023400d8d76231f961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>producer</sys_name>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_choice_x_snc_lend_case_producer</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-13 04:56:50</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_guide_items">
+    <sc_cat_item_guide_items action="INSERT_OR_UPDATE">
+        <condition/>
+        <guide/>
+        <ignore_mandatory_eval>false</ignore_mandatory_eval>
+        <item display_value="Loan">9259b6ca13fb1f806628b90a6144b0d3</item>
+        <order>100</order>
+        <quantity>1</quantity>
+        <requested_by/>
+        <requested_for/>
+        <show_quantity>false</show_quantity>
+        <sys_class_name>sc_cat_item_guide_items</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-08-09 18:03:33</sys_created_on>
+        <sys_id>a0fe784a13b71f806628b90a6144b078</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>9259b6ca13fb1f806628b90a6144b0d3</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sc_cat_item_guide_items_a0fe784a13b71f806628b90a6144b078</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-08-10 14:15:36</sys_updated_on>
+        <use_sc_layout>false</use_sc_layout>
+    </sc_cat_item_guide_items>
+</record_update>

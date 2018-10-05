@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_snc_lend_accounting" label="Expense" max_length="40" name="x_snc_lend_expense" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Property" max_length="32" name="property" reference="x_snc_lend_property" type="reference"/>
+        <index name="index">
+            <element name="property"/>
+        </index>
+    </element>
+</database>

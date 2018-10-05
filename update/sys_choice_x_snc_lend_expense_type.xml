@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_snc_lend_expense" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mortgage</label>
+            <language>en</language>
+            <name>x_snc_lend_expense</name>
+            <sequence>1</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:49:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e7be799d13fb9b806628b90a6144b01c</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:49:50</sys_updated_on>
+            <value>mortgage</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Property Taxes</label>
+            <language>en</language>
+            <name>x_snc_lend_expense</name>
+            <sequence>2</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:49:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cf6f71dd13fb9b806628b90a6144b07d</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:50:13</sys_updated_on>
+            <value>property_taxes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Home Owners Insurance</label>
+            <language>en</language>
+            <name>x_snc_lend_expense</name>
+            <sequence>3</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:50:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>058f71dd13fb9b806628b90a6144b086</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:50:54</sys_updated_on>
+            <value>home_owners_insurance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_snc_lend_expense</name>
+            <sequence>4</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-09 20:44:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5fb36546133b1f806628b90a6144b01d</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-09 20:44:25</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <name>x_snc_lend_expense</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-18 16:46:42</sys_created_on>
+            <sys_id>540d26bedb2423000d8d76231f9619d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>type</sys_name>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_choice_x_snc_lend_expense_type</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-18 16:46:42</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

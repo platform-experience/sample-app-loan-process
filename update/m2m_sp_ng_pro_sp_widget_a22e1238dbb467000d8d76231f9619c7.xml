@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="scToggleData">c045f99a0b67320014ea425663673a25</sp_angular_provider>
+        <sp_widget display_value="Record Producer Stepthrough v2">222e5ef4dbb467000d8d76231f9619a3</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-24 20:49:43</sys_created_on>
+        <sys_id>a22e1238dbb467000d8d76231f9619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>scToggleData.rp-stepthrough</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_a22e1238dbb467000d8d76231f9619c7</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-24 20:49:43</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>

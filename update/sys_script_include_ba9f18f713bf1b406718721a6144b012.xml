@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_lend.LoanCaseHistory</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>LoanCaseHistory</name>
+        <script><![CDATA[var LoanCaseHistory = Class.create();
+
+LoanCaseHistory.prototype = {
+	
+	initialize: function() {
+		this.user = gs.getUser();
+		this.userId = gs.getUserID();
+	},
+	
+	getCaseJSON: function(caseGR) {
+		return {
+			contact: caseGR.contact.toString(),
+			borrower: {
+				value: caseGR.borrower.toString(),
+				display: caseGR.borrower.getDisplayValue()
+			},
+			co_borrower: {
+				value: caseGR.co_borrower.toString(),
+				display: caseGR.co_borrower.getDisplayValue()
+			},
+			subject_property: {
+				value: caseGR.subject_property.toString(),
+				display: caseGR.subject_property.getDisplayValue()
+			},
+			loan_product: caseGR.loan_product.toString()
+		};
+	},
+	
+	getCases: function() {
+		var cases = [];
+		var caseGR = new GlideRecord('x_snc_lend_case');
+		caseGR.addQuery('contact', this.userId);
+		caseGR.query();
+		while (caseGR.next()) {
+			cases.push( this.getCaseJSON(caseGR) );
+		}
+		return cases;
+	},
+	
+	hasCaseHistory: function(userId) {
+		var cases = [];
+		var caseGR = new GlideRecord('x_snc_lend_case');
+		caseGR.addQuery('contact', userId);
+		caseGR.query();
+		if (caseGR.next()) return true;
+		else return false;
+	},
+	
+	getLatestCase: function(userId) {
+		var caseGR = new GlideRecord('x_snc_lend_case');
+		caseGR.orderBy('sys_updated_on'); // replace with new field submitted_on?
+		caseGR.addQuery('contact', userId);
+		caseGR.query();
+		if (caseGR.next()) {
+			return this.getCaseJSON(caseGR);
+		} else return '';
+	},
+	
+	getBorrowerJSON: function(borrowerGR) {
+		return {
+			sys_id: borrowerGR.sys_id.toString(),
+			name: borrowerGR.name.toString(),
+			ssn: borrowerGR.ssn.toString(),
+			birthdate: borrowerGR.birthdate.toString(),
+			rent_or_own: borrowerGR.rent_or_own.toString(),
+			same_home_as_borrower: borrowerGR.same_home_as_borrower.toString(),
+			education: borrowerGR.education.toString(),
+			marital_status: borrowerGR.marital_status.toString(),
+			dependents: borrowerGR.dependents.toString()
+		};
+	},
+	
+	getLatestBorrower: function() {
+		var caseGR = new GlideRecord('x_snc_lend_case');
+		caseGR.addQuery('contact', this.userId);
+		caseGR.addNotNullQuery('borrower');
+		caseGR.orderBy('sys_updated_on'); // replace with new field submitted_on?
+		caseGR.query();
+		if (caseGR.next()) {
+			var borrowerGR = new GlideRecord('x_snc_lend_borrower');
+			if (borrowerGR.get(caseGR.borrower)) {
+				return this.getBorrowerJSON(borrowerGR);
+			} else return false;
+		} else return false;
+	},
+	
+	getPropertyJSON: function(propertyGR) {
+		return {
+			sys_id: propertyGR.sys_id.toString(),
+			borrower: propertyGR.borrower.toString(),
+			name: propertyGR.name.toString(),
+			street: propertyGR.street.toString(),
+			city: propertyGR.city.toString(),
+			state: propertyGR.state.toString(),
+			zip: propertyGR.zip.toString(),
+			country: propertyGR.country.toString(),
+			owned: propertyGR.owned.toString(),
+			value: propertyGR.value.toString()
+		};
+	},
+	
+	getProperty: function() {
+		var sysId = this.getParameter('sysparm_property_id');
+		console.log(sysId);
+		var propertyGR = new GlideRecord('x_snc_lend_property');
+		if (propertyGR.get(sysId))
+			return JSON.stringify( this.getPropertyJSON(propertyGR) );
+		else return 'false';
+	},
+	
+	hasHistoricProperties: function() {
+		var caseGR = new GlideRecord('x_snc_lend_case');
+		caseGR.addQuery('contact', this.userId);
+		caseGR.addNotNullQuery('subject_property');
+		caseGR.query();
+		if (caseGR.next()) return true;
+		else return false;
+	},
+	
+	hasHistoricHomes: function() {
+		var propertyGR = new GlideRecord('x_snc_lend_property');
+		propertyGR.addQuery('borrower.loan_case.contact', this.userId);
+		propertyGR.query();
+		if (propertyGR.hasNext()) return true;
+		else return false;
+	},
+	
+	getEmploymentJSON: function(employmentGR) {
+		return {
+			company: employmentGR.company.toString(),
+			current: employmentGR.current,
+			position: employmentGR.position.toString(),
+			start_date: employmentGR.start_date,
+			end_date: employmentGR.end_date,
+			industry_start_date: employmentGR.industry_start_date,
+			borrower: employmentGR.borrower.toString()
+		};
+	},
+	
+	getEmployments: function() {
+		var employmentGR = new GlideRecord('x_scn_lend_employment');
+		employmentGR.addQuery('borrower.loan_case.contact', this.userId);
+		employmentGR.query();
+		var employments = [];
+		while (employmentGR.next()) {
+			employments.push( this.getEmploymentJSON(employmentGR) );
+		}
+		return employments;
+	},
+	
+	getBorrowerEmployments: function(loanId, borrower_or_co_borrower) {
+		var caseGR = new GlideRecord('x_snc_lend_case');
+		if ( caseGR.get(loanId) ) {
+			var borrowerId = caseGR.borrower.toString();
+			var employments = [];
+			var employmentGR = new GlideRecord('x_snc_lend_employment');
+			employmentGR.addQuery(borrower_or_co_borrower, borrowerId);
+			employmentGR.query();
+			while (employmentGR.next())
+				employments.push( this.getEmploymentJSON(employmentGR) );
+		}
+	},
+	
+	getFieldValueFromCase: function(caseId, field) {
+		var caseGR = new GlideRecord('x_snc_lend_case');
+		if ( caseGR.get(caseId) ) return caseGR[field].toString();
+		else return false;
+	},
+	
+	getRelatedListRecords: function(borrowerId) {
+		
+	},
+
+    type: 'LoanCaseHistory'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-08-15 03:02:17</sys_created_on>
+        <sys_id>ba9f18f713bf1b406718721a6144b012</sys_id>
+        <sys_mod_count>72</sys_mod_count>
+        <sys_name>LoanCaseHistory</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_script_include_ba9f18f713bf1b406718721a6144b012</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-18 19:58:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

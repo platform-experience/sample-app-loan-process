@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Borrower" max_length="40" name="x_snc_lend_borrower" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Date of Birth" max_length="40" name="birthdate" type="glide_date"/>
+        <element label="Contact" max_length="32" name="contact" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" hint="not listed by other borrower" label="Dependents" max_length="40" name="dependents" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="8" sequence="8" value="8"/>
+                <element inactive_on_update="false" label="9" sequence="9" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="10" value="10"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Education" max_length="40" name="education" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Some High School" sequence="1" value="some_high_school"/>
+                <element inactive_on_update="false" label="High School Graduate or Equivalent" sequence="2" value="high_school_graduate"/>
+                <element inactive_on_update="false" label="Trade or Vocational Degree" sequence="3" value="trade_vocational"/>
+                <element inactive_on_update="false" label="Some College" sequence="4" value="some_college"/>
+                <element inactive_on_update="false" label="Associate Degree" sequence="5" value="associate"/>
+                <element inactive_on_update="false" label="Bachelor's Degree" sequence="6" value="bachelors"/>
+                <element inactive_on_update="false" label="Graduate or Professional Degree" sequence="7" value="graduate_professional"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Loan Case" max_length="32" name="loan_case" reference="x_snc_lend_case" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Marital Status" max_length="40" name="marital_status" type="choice">
+            <choice>
+                <element hint="including single, divorced, widowed" inactive_on_update="false" label="Unmarried" sequence="1" value="unmarried"/>
+                <element inactive_on_update="false" label="Married" sequence="2" value="married"/>
+                <element inactive_on_update="false" label="Separated" sequence="3" value="separated"/>
+            </choice>
+        </element>
+        <element display="true" label="Name" max_length="151" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Shares Home Assigned to Other Borrower" max_length="40" name="same_home_as_borrower" type="boolean"/>
+        <element label="Social Security Number" max_length="40" name="ssn" type="string"/>
+        <index name="index">
+            <element name="loan_case"/>
+        </index>
+        <index name="index2">
+            <element name="contact"/>
+        </index>
+    </element>
+</database>

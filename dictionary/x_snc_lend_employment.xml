@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Employment" max_length="40" name="x_snc_lend_employment" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="dependents" choice_table="x_snc_lend_borrower" label="Borrower" max_length="32" name="borrower" reference="x_snc_lend_borrower" type="reference">
+            <choice/>
+        </element>
+        <element display="true" label="Company" max_length="150" name="company" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Current" max_length="40" name="current" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Industry Start Date" max_length="40" name="industry_start_date" type="glide_date"/>
+        <element label="Position" max_length="150" name="position" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <index name="index">
+            <element name="borrower"/>
+        </index>
+    </element>
+</database>

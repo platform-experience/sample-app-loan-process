@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_lend_case" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Loan Application Case - Default view" name="x_snc_lend_case" related_list="NULL" sys_domain="global" view="Default view">5791c49edb5c2b000d8d76231f96197b</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:fe4f782913886f406718721a6144b0d7</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-04 04:45:13</sys_created_on>
+            <sys_id>9791c49edb5c2b000d8d76231f96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-04 04:45:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Loan Application Case - Default view" name="x_snc_lend_case" related_list="NULL" sys_domain="global" view="Default view">5791c49edb5c2b000d8d76231f96197b</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:7a9f7c2913886f406718721a6144b016</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-04 04:45:13</sys_created_on>
+            <sys_id>5391c49edb5c2b000d8d76231f96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-04 04:45:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Loan Application Case - Default view" name="x_snc_lend_case" related_list="NULL" sys_domain="global" view="Default view">5791c49edb5c2b000d8d76231f96197b</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:d7ef706913886f406718721a6144b039</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-04 04:45:13</sys_created_on>
+            <sys_id>d791c49edb5c2b000d8d76231f96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-04 04:45:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Loan Application Case - Default view" name="x_snc_lend_case" related_list="NULL" sys_domain="global" view="Default view">5791c49edb5c2b000d8d76231f96197b</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>REL:296b70a513886f406718721a6144b091</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-04 04:45:13</sys_created_on>
+            <sys_id>5f91c49edb5c2b000d8d76231f96197d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-04 04:45:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Loan Application Case - Default view" name="x_snc_lend_case" related_list="NULL" sys_domain="global" view="Default view">5791c49edb5c2b000d8d76231f96197b</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:2910c16913886f406718721a6144b03f</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-04 04:45:13</sys_created_on>
+            <sys_id>d391c49edb5c2b000d8d76231f96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-04 04:45:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Loan Application Case - Default view" name="x_snc_lend_case" related_list="NULL" sys_domain="global" view="Default view">5791c49edb5c2b000d8d76231f96197b</list_id>
+            <order_by/>
+            <position>5</position>
+            <related_list>REL:6a30456913886f406718721a6144b06a</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-04 04:45:13</sys_created_on>
+            <sys_id>5b91c49edb5c2b000d8d76231f96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-04 04:45:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Loan Application Case - Default view" name="x_snc_lend_case" related_list="NULL" sys_domain="global" view="Default view">5791c49edb5c2b000d8d76231f96197b</list_id>
+            <order_by/>
+            <position>6</position>
+            <related_list>REL:6c30085edb5c2b000d8d76231f961976</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-04 04:45:13</sys_created_on>
+            <sys_id>df91c49edb5c2b000d8d76231f96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-04 04:45:13</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Loan Application Case - Default view</calculated_name>
+            <filter/>
+            <name>x_snc_lend_case</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-09-04 04:45:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5791c49edb5c2b000d8d76231f96197b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Loan Application Case - Default view</sys_name>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_lend_case_null</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-09-04 04:45:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

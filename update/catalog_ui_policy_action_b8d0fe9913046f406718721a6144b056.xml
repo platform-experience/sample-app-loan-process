@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Co-Borrower">2bc0ba9913046f406718721a6144b0be</catalog_item>
+        <catalog_variable>IO:c0d0be9913046f406718721a6144b04d</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-08-20 04:41:07</sys_created_on>
+        <sys_id>b8d0fe9913046f406718721a6144b056</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>rent_or_own</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_b8d0fe9913046f406718721a6144b056</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-08-23 15:51:32</sys_updated_on>
+        <table/>
+        <ui_policy display_value="hide address fields if shared with other borrower">3cd0fe9913046f406718721a6144b04d</ui_policy>
+        <variable>rent_or_own</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="3e38fd4913739b806628b90a6144b086" sys_domain="global" table="x_snc_lend_asset" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>d1e24651133f9b806628b90a6144b0c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>1</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>55e24651133f9b806628b90a6144b0c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>2</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>d5e24651133f9b806628b90a6144b0c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>account_number</element>
+            <position>3</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>59e24651133f9b806628b90a6144b0c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>borrower</element>
+            <position>4</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>d9e24651133f9b806628b90a6144b0c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>5de24651133f9b806628b90a6144b0c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>value</element>
+            <position>6</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>dde24651133f9b806628b90a6144b0c5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>property</element>
+            <position>7</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>51e24651133f9b806628b90a6144b0c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 15:04:45</sys_created_on>
+            <sys_id>d1e24651133f9b806628b90a6144b0c6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_lend_asset" sys_domain="global" view="Default view">3e38fd4913739b806628b90a6144b086</sys_ui_section>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 15:04:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_snc_lend_asset</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-06 19:39:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e38fd4913739b806628b90a6144b086</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_lend_asset</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_ui_section_3e38fd4913739b806628b90a6144b086</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-06 19:39:41</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

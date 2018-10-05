@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_snc_lend_accounting" label="Income" max_length="40" name="x_snc_lend_income" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Employment" max_length="32" name="employment" reference="x_snc_lend_employment" reference_qual="borrower=current.borrower^EQ" reference_qual_condition="borrower=current.borrower^EQ" type="reference"/>
+        <index name="index">
+            <element name="employment"/>
+        </index>
+    </element>
+</database>

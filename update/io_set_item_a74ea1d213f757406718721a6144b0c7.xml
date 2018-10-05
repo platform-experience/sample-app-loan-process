@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>300</order>
+        <sc_cat_item display_value="Loan">9259b6ca13fb1f806628b90a6144b0d3</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-08-10 16:08:42</sys_created_on>
+        <sys_id>a74ea1d213f757406718721a6144b0c7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Property.Loan &amp; Property</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>io_set_item_a74ea1d213f757406718721a6144b0c7</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-08-20 15:35:42</sys_updated_on>
+        <variable_set display_value="Property">0f30c35d13bf9b806628b90a6144b0aa</variable_set>
+    </io_set_item>
+</record_update>

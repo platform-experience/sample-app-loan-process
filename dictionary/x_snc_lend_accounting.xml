@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Accounting" max_length="40" name="x_snc_lend_accounting" type="collection">
+        <element label="Account Number" max_length="40" name="account_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Borrower" max_length="32" name="borrower" reference="x_snc_lend_borrower" type="reference"/>
+        <element attributes="omit_sys_original=true,edge_encryption_enabled=true" label="Current Balance" max_length="20" name="current_balance" type="currency"/>
+        <element attributes="omit_sys_original=true,edge_encryption_enabled=true" label="Monthly Amount" max_length="20" name="monthly_amount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" default="true" label="Negative" max_length="40" name="negative" type="boolean"/>
+        <element display="true" label="Short Description" max_length="160" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="50" name="type" type="choice">
+            <choice/>
+        </element>
+        <element attributes="omit_sys_original=true,edge_encryption_enabled=true" label="Value" max_length="20" name="value" type="currency"/>
+        <index name="index">
+            <element name="borrower"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

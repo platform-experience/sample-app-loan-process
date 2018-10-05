@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Loan Application">f5e6aa7ddbdce7000d8d76231f961983</flow>
+        <order>3.1</order>
+        <parent_ui_id>97ff1ea7-b255-4649-bb41-00cbb94547fd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 03:57:24</sys_created_on>
+        <sys_id>fea637c6db5c2b000d8d76231f961974</sys_id>
+        <sys_mod_count>128</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_hub_action_instance_fea637c6db5c2b000d8d76231f961974</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-09-18 11:46:54</sys_updated_on>
+        <ui_id>e81f0ad2-fc46-45a3-939b-7a976a3ec094</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fea637c6db5c2b000d8d76231f961974"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fea637c6db5c2b000d8d76231f961974</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 06:09:19</sys_created_on>
+        <sys_id>03d4d41edb9c2b000d8d76231f9619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 06:09:19</sys_updated_on>
+        <value>co_borrowerISNOTEMPTY</value>
+        <variable display_value="">5ff92c160b10030085c083eb37673ac1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fea637c6db5c2b000d8d76231f961974</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 03:57:24</sys_created_on>
+        <sys_id>32a637c6db5c2b000d8d76231f96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 03:57:24</sys_updated_on>
+        <value>co_borrowerISNOTEMPTY</value>
+        <variable display_value="">c7f92c160b10030085c083eb37673a49</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fea637c6db5c2b000d8d76231f961974</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 06:09:19</sys_created_on>
+        <sys_id>c3d4d41edb9c2b000d8d76231f9619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 06:09:19</sys_updated_on>
+        <value>x_snc_lend_case</value>
+        <variable display_value="">1ff92c160b10030085c083eb37673a81</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fea637c6db5c2b000d8d76231f961974</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 03:57:24</sys_created_on>
+        <sys_id>f6a637c6db5c2b000d8d76231f96197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 03:57:24</sys_updated_on>
+        <value>x_snc_lend_case</value>
+        <variable display_value="">36f9a8160b10030085c083eb37673af3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fea637c6db5c2b000d8d76231f961974"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>fea637c6db5c2b000d8d76231f961974</id>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 06:09:19</sys_created_on>
+        <sys_id>0bd4d41edb9c2b000d8d76231f9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 06:09:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>fea637c6db5c2b000d8d76231f961974</id>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 03:57:24</sys_created_on>
+        <sys_id>36a637c6db5c2b000d8d76231f96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 03:57:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_8bb9a8160b10030085c083eb37673aec</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>fea637c6db5c2b000d8d76231f961974</id>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 06:09:19</sys_created_on>
+        <sys_id>8fd4d41edb9c2b000d8d76231f9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 06:09:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>fea637c6db5c2b000d8d76231f961974</id>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 03:57:24</sys_created_on>
+        <sys_id>bea637c6db5c2b000d8d76231f96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 03:57:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_8bb9a8160b10030085c083eb37673aec</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>fea637c6db5c2b000d8d76231f961974</id>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 06:09:19</sys_created_on>
+        <sys_id>cbd4d41edb9c2b000d8d76231f9619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 06:09:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d3f92c160b10030085c083eb37673a7f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>fea637c6db5c2b000d8d76231f961974</id>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-04 03:57:24</sys_created_on>
+        <sys_id>faa637c6db5c2b000d8d76231f96197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-04 03:57:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_8bb9a8160b10030085c083eb37673aec</table>
+        <value/>
+    </sys_element_mapping>
+</record_update>

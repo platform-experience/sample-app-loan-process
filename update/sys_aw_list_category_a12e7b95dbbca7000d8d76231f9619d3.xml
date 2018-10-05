@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_aw_list_category">
+    <sys_aw_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <order>10</order>
+        <sys_class_name>sys_aw_list_category</sys_class_name>
+        <sys_created_by>runfola</sys_created_by>
+        <sys_created_on>2018-09-26 17:06:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a12e7b95dbbca7000d8d76231f9619d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loans</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_aw_list_category_a12e7b95dbbca7000d8d76231f9619d3</sys_update_name>
+        <sys_updated_by>runfola</sys_updated_by>
+        <sys_updated_on>2018-09-26 17:06:08</sys_updated_on>
+        <title>Loans</title>
+    </sys_aw_list_category>
+</record_update>

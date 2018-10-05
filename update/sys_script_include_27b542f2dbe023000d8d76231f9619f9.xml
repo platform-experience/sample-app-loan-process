@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_lend.LoanRecordMgmt</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>LoanRecordMgmt</name>
+        <script><![CDATA[var LoanRecordMgmt = Class.create();
+LoanRecordMgmt.prototype = {
+	
+    initialize: function(producer) {
+		var vObj = { vars: {}, sets: {}, multiSets: {} };
+		for (var v in producer) {
+			if (v.indexOf('IO') == 0 && v.length == 34) {
+				// gets all variables including those in sets - those can be sorted based on further queries
+				// multi-var sets do not directly output values, see below
+				vObj.vars[v.slice(2)] = { value: producer[v].toString() };
+			} else if ( v.indexOf( this.prefix ) == 0 ) {
+				// multi-row set data all serialized together! (based on name prefixed with 'rpvs_');
+				vObj.multiSets[v] = { rows: JSON.parse( String(producer[v]) ) };
+			}
+		}
+		this.v = vObj;
+    },
+	
+	prefix: 'rpvs',
+	
+	testOutput: function() {
+		return this.getVars();
+	},
+	
+	getVars: function() {
+		
+		var vObj = this.v;
+		
+		var vGR = new GlideRecord('item_option_new');
+		vGR.addQuery('sys_id','IN', Object.keys(vObj.vars).join(',') );
+		vGR.query();
+		
+		while (vGR.next()) {
+			
+			var vId = vGR.sys_id.toString();
+			vObj.vars[vId].question_text = vGR.question_text.toString();
+			vObj.vars[vId].name = vGR.name.toString();
+			
+			if (vGR.variable_set) {
+				var vSetGR = vGR.variable_set;
+				var vSetId = vSetGR.sys_id.toString();
+				if (vSetGR.type.toString() == 'one_to_one' && vSetGR.internal_name.indexOf( this.prefix ) === 0 ) {
+					if (!vObj.sets[vSetId]) {
+						vObj.sets[vSetId] = {
+							title: vSetGR.title.toString(),
+							type: vSetGR.type.toString(),
+							name: vSetGR.internal_name.toString(),
+							vars: {}
+						};
+					}
+					// move variable into set (only if one-to-one set)
+					vObj.sets[vSetId].vars[vId] = vObj.vars[vId];
+				}
+				// remove all set variables from full list of variables
+				delete vObj.vars[vId];
+			}
+		}
+		return vObj;
+	},
+	
+	createFromAllVs: function(sets_input) {
+		var vObj = this.getVars();
+		var writeback_data = {};
+		for (var s in vObj.sets) {
+			var set = vObj.sets[s];
+			var nameArr = set.name.split('_');
+			if (nameArr.length > 1) {
+				set.prefix = nameArr[1]; // pulls 2nd prefix, after this.prefix
+				if (sets_input[set.prefix]) {
+					var set_input = sets_input[set.prefix];
+					set.write_table = set_input.write_table;
+					set.other_values = set_input.other_values;
+					var new_record_id = this.createFromVs(set);
+					if (set_input.writeback_field)
+						writeback_data[set_input.writeback_field] = new_record_id;
+				}
+			}
+		}
+		/*
+		if ( Object.keys(vObj.multiSets).length ) {
+			for (var mSet in vObj.multiSets) {
+				mSet.prefix = Object.keys(mSet.rows[0])[0].split('_')[0];
+				if (sets_input[mSet.prefix]) {
+					mSet.write_table = sets_input[mSet.prefix].write_table;
+					mSet.other_values = sets_input[mSet.prefix].other_values;
+					this.createEachFromVs( mSet );
+				}
+			}
+		}
+		*/
+		return writeback_data;
+	},
+	
+	createFromVs: function(set) {
+		var recordGR = new GlideRecord( set.write_table );
+		recordGR.initialize();
+		for (var v in set.vars) {
+			var vName = set[v].name.slice(set.prefix.length+1);
+			recordGR[vName] = set[v].value;
+		}
+		for (var d in set.other_values) recordGR[d] = set.other_values[d];
+		return recordGR.insert();
+	},
+	
+	createEachFromVs: function(set) {
+		for (var i = 0; i < set.rows.length; i++) {
+			var row = set.rows[i];
+			var mrGR = new GlideRecord( set.write_table );
+			mrGR.initialize();
+			for (var v in row) mrGR[v.slice(set.prefix.length+1)] = row[v];
+			for (var d in set.other_values) mrGR[d] = set.other_values[d];
+			mrGR.insert();
+		}
+	},
+	
+	createFromSet: function(set_name, write_table, prefix, producer, data) {
+		// deprecated
+		var recordGR = new GlideRecord( write_table );
+		recordGR.initialize();
+		var qGR = new GlideRecord('item_option_new');
+		qGR.addQuery('variable_set.internal_name', set_name);
+		qGR.query();
+		while (qGR.next()) {
+			var q_name = qGR.name.slice(prefix.length+1);
+			recordGR[q_name] = producer['IO'+qGR.sys_id];
+		}
+		for (var d in data) recordGR[d] = data[d];
+		recordGR.insert();
+	},
+	
+	createEachFromSet: function(set_name, write_table, prefix, producer, data) {
+		// deprecated
+		var set = JSON.parse( String( producer[set_name] ) );
+		for (var i = 0; i < set.length; i++) {
+			var row = set[i];
+			var multiRecordGR = new GlideRecord( write_table );
+			multiRecordGR.initialize();
+			for (var v in row) multiRecordGR[v.slice(prefix.length+1)] = row[v];
+			for (var d in data) multiRecordGR[d] = data[d];
+			multiRecordGR.insert();
+		}
+	},
+
+    type: 'LoanRecordMgmt'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-18 14:01:56</sys_created_on>
+        <sys_id>27b542f2dbe023000d8d76231f9619f9</sys_id>
+        <sys_mod_count>76</sys_mod_count>
+        <sys_name>LoanRecordMgmt</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_script_include_27b542f2dbe023000d8d76231f9619f9</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-10-03 20:35:34</sys_updated_on>
+    </sys_script_include>
+</record_update>

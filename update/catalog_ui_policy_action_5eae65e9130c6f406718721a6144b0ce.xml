@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Loan">9259b6ca13fb1f806628b90a6144b0d3</catalog_item>
+        <catalog_variable>IO:e0f5896d13886f406718721a6144b05e</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-08-20 18:30:49</sys_created_on>
+        <sys_id>5eae65e9130c6f406718721a6144b0ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>down_payment</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_5eae65e9130c6f406718721a6144b0ce</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-08-21 16:52:15</sys_updated_on>
+        <table/>
+        <ui_policy display_value="if historic properties and not (selected or new) hide address fields">c356399c1348ab406718721a6144b021</ui_policy>
+        <variable>down_payment</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

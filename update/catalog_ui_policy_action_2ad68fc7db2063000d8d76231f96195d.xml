@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:bea6cbc7db2063000d8d76231f9619e7</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>200</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-19 13:18:17</sys_created_on>
+        <sys_id>2ad68fc7db2063000d8d76231f96195d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>case_has_co_borrower</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_2ad68fc7db2063000d8d76231f96195d</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-19 21:16:36</sys_updated_on>
+        <table/>
+        <ui_policy display_value="hide self">12f7c1d2db506b000d8d76231f9619f8</ui_policy>
+        <variable>case_has_co_borrower</variable>
+        <variable_set display_value="Case">cf978d92db506b000d8d76231f96198b</variable_set>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

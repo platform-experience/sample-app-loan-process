@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow_snapshot">
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <annotation/>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>loan_application</internal_name>
+        <label_cache>[{"name":"4e92e24d-aa9b-4f71-930b-5565236a18b3.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"4e92e24d-aa9b-4f71-930b-5565236a18b3.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"66606d23-bead-49fd-8f17-1ba8139f4640.approval_state","label":"3➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice"},{"name":"Created_1.current.borrower","label":"Trigger➛Loan Application Case Record➛Borrower","reference":"x_snc_lend_borrower","reference_display":"Borrower","type":"reference","base_type":"reference","parent_table_name":"x_snc_lend_case","column_name":"borrower"},{"name":"Created_1.current","label":"Trigger➛Loan Application Case Record","reference":"x_snc_lend_case","reference_display":"Loan Application Case","type":"reference","base_type":"reference"},{"name":"539a177f-28ad-4a5a-b648-4ba9ec469633.Count","label":"3➛Count","reference_display":"Count","type":"integer","base_type":"integer"},{"name":"539a177f-28ad-4a5a-b648-4ba9ec469633.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"539a177f-28ad-4a5a-b648-4ba9ec469633.Records","label":"3➛Records","reference_display":"Records","type":"records","base_type":"records"},{"name":"fb0fffc1-92a4-4bc9-ab86-5401495525c4.Record.sys_id","label":"3➛Employment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_snc_lend_employment","column_name":"sys_id"},{"name":"Created or Updated_1.current.borrower","label":"Trigger➛Loan Application Case Record➛Borrower","reference":"x_snc_lend_borrower","reference_display":"Borrower","type":"reference","base_type":"reference","parent_table_name":"x_snc_lend_case","column_name":"borrower"},{"name":"fb0fffc1-92a4-4bc9-ab86-5401495525c4.Table","label":"3➛Employment Table","reference":"x_snc_lend_employment","reference_display":"Employment","type":"table_name","base_type":"table_name"},{"name":"fb0fffc1-92a4-4bc9-ab86-5401495525c4.Record","label":"3➛Employment Record","reference":"x_snc_lend_employment","reference_display":"Employment","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current.co_borrower","label":"Trigger➛Loan Application Case Record➛Co-Borrower","reference":"x_snc_lend_borrower","reference_display":"Borrower","type":"reference","base_type":"reference","parent_table_name":"x_snc_lend_case","column_name":"co_borrower"},{"name":"Created or Updated_1.current.loan_product","label":"Trigger➛Loan Application Case Record➛Loan Product","reference":"x_snc_lend_loan_product","reference_display":"Loan Product","type":"reference","base_type":"reference","parent_table_name":"x_snc_lend_case","column_name":"loan_product"},{"name":"Created or Updated_1.current","label":"Trigger➛Loan Application Case Record","reference":"x_snc_lend_case","reference_display":"Loan Application Case","type":"reference","base_type":"reference"},{"name":"Created or Updated_1.current.loan_product.loan_type","label":"Trigger➛Loan Application Case Record➛Loan Product➛Loan Type","reference":"","reference_display":"Loan Type","type":"choice","base_type":"choice","parent_table_name":"x_snc_lend_loan_product","column_name":"loan_type"},{"name":"4f4b0bb0-0abd-42c0-bd54-44776d1360b8.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"4f4b0bb0-0abd-42c0-bd54-44776d1360b8.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"}]</label_cache>
+        <master>true</master>
+        <name>Loan Application</name>
+        <outputs/>
+        <parent_flow display_value="Loan Application">f5e6aa7ddbdce7000d8d76231f961983</parent_flow>
+        <remote_trigger_id/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-03 06:05:06</sys_created_on>
+        <sys_id>6b4ac375db502b000d8d76231f9619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loan Application</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>sys_hub_flow_snapshot_6b4ac375db502b000d8d76231f9619a1</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-03 06:05:06</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=6b4ac375db502b000d8d76231f9619a1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6b4ac375db502b000d8d76231f9619a1"/>
+</record_update>

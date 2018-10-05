@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="loan_type" table="x_snc_lend_loan_product" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>loan_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Conventional</label>
+            <language>en</language>
+            <name>x_snc_lend_loan_product</name>
+            <sequence>1</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:07:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cfc5b51913fb9b806628b90a6144b0cb</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:07:48</sys_updated_on>
+            <value>conventional</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>loan_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FHA</label>
+            <language>en</language>
+            <name>x_snc_lend_loan_product</name>
+            <sequence>2</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:07:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61d5391913fb9b806628b90a6144b006</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:08:04</sys_updated_on>
+            <value>fha</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>loan_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VA</label>
+            <language>en</language>
+            <name>x_snc_lend_loan_product</name>
+            <sequence>3</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:08:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>21e5391913fb9b806628b90a6144b0ce</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:08:13</sys_updated_on>
+            <value>va</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>loan_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>USDA</label>
+            <language>en</language>
+            <name>x_snc_lend_loan_product</name>
+            <sequence>4</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:08:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>40f5791913fb9b806628b90a6144b0ba</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:08:27</sys_updated_on>
+            <value>usda</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>loan_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_snc_lend_loan_product</name>
+            <sequence>5</sequence>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:08:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f2f5b91913fb9b806628b90a6144b02d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:08:41</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>loan_type</element>
+            <name>x_snc_lend_loan_product</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jacob.shemkovitz</sys_created_by>
+            <sys_created_on>2018-08-07 14:07:42</sys_created_on>
+            <sys_id>8f1a79fadb0823000d8d76231f9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>loan_type</sys_name>
+            <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+            <sys_update_name>sys_choice_x_snc_lend_loan_product_loan_type</sys_update_name>
+            <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+            <sys_updated_on>2018-08-07 14:07:42</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

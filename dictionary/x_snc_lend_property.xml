@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmn_location" label="Real Estate Property" max_length="40" name="x_snc_lend_property" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Owner/Resident" max_length="32" name="borrower" reference="x_snc_lend_borrower" type="reference"/>
+        <element choice="1" hint="Intention for owned property upon purchase of subject property" label="Intention" max_length="40" name="intention" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Sell" sequence="1" value="sell"/>
+                <element inactive_on_update="false" label="Rent" sequence="2" value="rent"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Loan Case" max_length="32" name="loan_case" reference="x_snc_lend_case" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Owned" max_length="40" name="owned" type="boolean"/>
+        <element label="Property Value" max_length="20" name="property_value" type="currency"/>
+        <index name="index">
+            <element name="loan_case"/>
+        </index>
+        <index name="index2">
+            <element name="borrower"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="Income">47a36e95137f9b806628b90a6144b0a5</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>jacob.shemkovitz</sys_created_by>
+        <sys_created_on>2018-09-18 15:23:24</sys_created_on>
+        <sys_id>c0f91672db2423000d8d76231f9619a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Income (Co-Borrower).Income</sys_name>
+        <sys_package display_value="Loan Process" source="x_snc_lend">bc2ae98c13bfdf006718721a6144b07d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loan Process">bc2ae98c13bfdf006718721a6144b07d</sys_scope>
+        <sys_update_name>io_set_item_c0f91672db2423000d8d76231f9619a4</sys_update_name>
+        <sys_updated_by>jacob.shemkovitz</sys_updated_by>
+        <sys_updated_on>2018-09-18 15:23:24</sys_updated_on>
+        <variable_set display_value="Income (Co-Borrower)">085756fedbe023000d8d76231f96190e</variable_set>
+    </io_set_item>
+</record_update>
